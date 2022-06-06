@@ -20,6 +20,6 @@ jobs:
     #  run: yarn install && npm run-script build
     
     - name: Deploy static site to S3 bucket
-      run: aws s3 sync ./templates/mobile-appeca/ s3://cloudstore-mychannel-production.com 
+      run: aws s3 sync ./ s3://cloudstore-mychannel-production.s3.amazonaws.com/
       # --delete flag will remove any file in the s3 that are not on the "thefoldertodeploy" folder
 # https://cloudstore-mychannel-production.s3.amazonaws.com/templates/mobile-appeca/
